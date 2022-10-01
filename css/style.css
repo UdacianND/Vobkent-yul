@@ -104,6 +104,7 @@
     background: url(../img/bg-road1.jpg) top right no-repeat;
     background-size: cover;
     min-height: 80vh;
+    background-position: center;
 }
 
 .header-title{
@@ -133,7 +134,8 @@
 }
 
 .project-image img{
-    background-size:contain;
+    height: 100%;
+    background-position: center;
 }
 
 .service-item .service-icon {
@@ -274,7 +276,7 @@
 }
 
 .post{
-    min-height: 90vh;
+    /* min-height: 90vh; */
     overflow: hidden;
 }
 
@@ -305,6 +307,11 @@
     cursor: zoom-in;
 }
 
+.contact-form{
+    margin:48px;
+    padding:48px;
+    box-shadow: 0px 0px 20px 6px rgb(0 0 0 / 24%);
+}
 @media (max-width: 1000px){
     .galery{
         grid-template-columns: auto auto;
@@ -314,5 +321,13 @@
 @media (max-width: 630px){
     .galery{
         grid-template-columns: auto;
+    }
+
+    .contact-form{
+        margin:3px;
+        padding:24px;
+    }
+    .project-image{
+        height: 200px;
     }
 }
